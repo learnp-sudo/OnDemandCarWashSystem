@@ -1,0 +1,82 @@
+/* .container{
+    background-image: url(download.jpg);
+   
+}*/
+ body{
+    background-color:rgb(134, 155, 179);
+    height: 100%;
+}  
+.heading{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(41, 41, 76);
+}
+
+
+#carouselExampleIndicators{
+    width: 70%;
+    height: 550px;
+    margin: auto;
+    margin-bottom:80px;
+    color: rgb(41, 41, 76);
+    
+}
+
+hr{
+    width: 60%;
+    margin-right: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.card-footer{
+    text-align: center;
+    font-size: large;
+    color:rgb(41, 41, 76);
+    background: linear-gradient(125deg,rgb(134, 155, 179),#6d90b0);
+}
+
+#title{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+    font-size: 26px;
+}
+
+.headWasher{
+    font-size: 60px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    color: rgb(41, 41, 76);
+}
+
+.container-fluid{
+    padding: 35px;
+    text-align: center;
+}
+
+.container-fluid hr, #washer hr{
+    width: 75%;
+    margin:auto;
+}
+
+.col-sm{
+    padding: 25px;
+}
+
+.col-sm fa-icon{
+    font-size: 3em;
+}

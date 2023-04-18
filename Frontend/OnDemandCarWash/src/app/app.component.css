@@ -1,0 +1,40 @@
+
+button {
+    margin-right: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+
+}
+.navbar{
+    /* //linear-gradient(125deg,rgb(214, 173, 111),#e9e994) */
+     /* background:linear-gradient(rgb(41, 41, 76),rgb(134, 155, 179));  */
+    /* background:linear-gradient(rgb(0,217,255),white); */
+    /* position: fixed;  */
+
+    left: 0;
+    right:0;
+    top: 0;
+    border-radius: 5px;
+  
+    height: 2.6rem;
+}
+.color{
+    background-color: rgb(69, 63, 63);
+}
+
+.mat-flat-button{
+    color: white !important;
+  }
+  .footer {
+    background:rgb(61, 57, 57) ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+ }
+.carwash{
+    text-align: center;
+}

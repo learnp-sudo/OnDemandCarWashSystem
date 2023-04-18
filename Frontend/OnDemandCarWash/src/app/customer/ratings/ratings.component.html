@@ -1,0 +1,72 @@
+<div class="bootstrap-wrapper">
+    <div class="container ">
+        <div class="row">
+            <div class="col-sm-6 offset-md-3">
+                <mat-card color="primary">
+                    <mat-card-header class="text-center">
+
+                        <div class="container">
+                            <fa-icon [icon]="user"></fa-icon>
+                            <mat-card-title style="font-weight: bold;">Feed Back</mat-card-title>
+                        </div>
+                    </mat-card-header>
+                    <mat-card-content class="text-center"> 
+                        <form #f="ngForm" (ngSubmit)="f.form.valid &&  addCustomerRating(Ratings)">
+                            <div class="row">
+                            
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Washer Name</mat-label>
+                                        <input matInput type="text" name="Washername" id="Washername" #Washername="ngModel" required="required"
+                                        [class.is-invalid]="Washername.invalid && Washername.touched" 
+                                          [(ngModel)]=Ratings.washerName >
+                                          <mat-error *ngIf="Washername.errors?.['required']">
+                                           washername is required
+                                        </mat-error>                           
+                                    </mat-form-field>
+                                </div>
+                                <div class="row">
+                                    
+                            
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Comments</mat-label>
+                                        <textarea matInput rows="5" cols="60"   style=" height: 10px;"
+                                        name="comments" id="comments" #comments="ngModel" required="required"
+                                        [class.is-invalid]="comments.invalid && comments.touched" 
+                                          [(ngModel)]=Ratings.comments ></textarea>
+                                          <mat-error *ngIf="comments.errors?.['required']">
+                                            required
+                                        </mat-error>                           
+                                    </mat-form-field>
+                                </div>
+                                
+                                <div class="row">
+                            
+                                    <mat-form-field appearance="outline">
+                                        <mat-label>Ratings</mat-label>
+                                        <input matInput type=number name="ratings" id="ratings" #ratings="ngModel" required="required"
+                                        [class.is-invalid]="ratings.invalid && ratings.touched" max="5" min="0"
+                                          [(ngModel)]=Ratings.rating >
+                                          <mat-error *ngIf="ratings.errors?.['required']">
+                                           Rating is required
+                                        </mat-error> 
+                                        <mat-error *ngIf="ratings.errors?.['max']">
+                                            Rating must be between 0-5
+                                         </mat-error> 
+                                         <mat-error *ngIf="ratings.errors?.['min']">
+                                            Rating must be between 0-5
+                                         </mat-error> 
+                                                             
+                                    </mat-form-field>
+                                </div>
+
+                                <div class="container text-center">
+                                    <button type="submit"  [disabled]="f.form.invalid " 
+                                        mat-raised-button color="primary">Submit</button>
+                                    </div>
+                                </form>
+                             </mat-card-content>
+                         </mat-card>
+                     </div>
+                 </div>
+             </div>
+         </div>

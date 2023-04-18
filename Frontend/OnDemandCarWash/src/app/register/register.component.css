@@ -1,0 +1,12 @@
+.role{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.row{
+    margin-left: 10px;
+}
+.col-5{
+    margin-left: 10px;  
+}

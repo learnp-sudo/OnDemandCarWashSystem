@@ -1,0 +1,54 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark color">
+  
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/landing-page"> 
+      <mat-icon>local_car_wash</mat-icon></a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav"> 
+        <li class="nav-item">
+          <button class="btn" (click)="contactinfo()"><b>Contact</b></button>
+        </li>
+        <li class="nav-item">
+          <button class="btn"  *ngIf="!_authService.loggedIn()" (click)="aboutus()"><b>About</b></button>
+        </li>
+      </ul>
+      <a style="color: whitesmoke; position: relative; left: 8cm;  font-family: 'Quicksand', sans-serif;font-size: large;"><b>GREEN&nbsp;CAR &nbsp;WASH</b></a> 
+    </div>
+    <div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          
+         
+            
+            <button color="warning" class="btn " routerLink="/login" *ngIf="!_authService.loggedIn()"><b>Login</b></button>
+
+
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()"><b>{{}}</b></a> 
+        </li> -->
+        
+        <li class="nav-item">
+         
+            <a class="nav-link" style="cursor:pointer; color: white;" *ngIf="_authService.loggedIn()" (click)="_authService.logoutUser()"><b>Logout</b></a> 
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+<footer>
+<div class="footer">
+ <p> 
+  
+  <fa-icon [icon] = "carIcon" style="color: rgb(150, 146, 150);"></fa-icon>&nbsp;
+  <fa-icon [icon] = "copyright" style="color: rgb(152, 149, 152);"></fa-icon>
+ 
+  &nbsp;2023 Copyright:OnDemandCarWash
+ 
+</p>
+</div>
+</footer>
+<!-- components based on navigation based on html -->
+<router-outlet></router-outlet>
