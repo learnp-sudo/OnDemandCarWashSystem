@@ -1,0 +1,42 @@
+2023-03-16 10:11:00,282 WARN org.apache.catalina.loader.WebappClassLoaderBase [Thread-1] The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='640eeb09f5c47726715c1a67', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:443)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:64)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:415)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-03-16 10:11:00,292 WARN org.apache.catalina.loader.WebappClassLoaderBase [Thread-1] The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/java.io.WinNTFileSystem.list(Native Method)
+ java.base@17.0.4.1/java.io.File.normalizedList(File.java:1176)
+ java.base@17.0.4.1/java.io.File.listFiles(File.java:1310)
+ app//ch.qos.logback.core.rolling.helper.FileFilterUtil.filesInFolderMatchingStemRegex(FileFilterUtil.java:82)
+ app//ch.qos.logback.core.rolling.helper.SizeAndTimeBasedArchiveRemover.getFilesInPeriod(SizeAndTimeBasedArchiveRemover.java:29)
+ app//ch.qos.logback.core.rolling.helper.TimeBasedArchiveRemover.capTotalSize(TimeBasedArchiveRemover.java:102)
+ app//ch.qos.logback.core.rolling.helper.TimeBasedArchiveRemover$ArhiveRemoverRunnable.run(TimeBasedArchiveRemover.java:244)
+ java.base@17.0.4.1/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+ java.base@17.0.4.1/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-03-16 10:11:00,293 WARN org.apache.catalina.loader.WebappClassLoaderBase [Thread-1] The web application [ROOT] appears to have started a thread named [MaintenanceTimer-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-03-16 10:11:00,419 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Shutting down DiscoveryClient ...
+2023-03-16 10:11:03,434 WARN com.netflix.discovery.TimedSupervisorTask [DiscoveryClient-0] task supervisor shutting down, can't accept the task
+2023-03-16 10:11:03,436 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Unregistering ...
+2023-03-16 10:11:03,446 INFO com.netflix.discovery.DiscoveryClient [Thread-1] DiscoveryClient_SHOPPING CART/inlen8520023835.corp.capgemini.com:Shopping Cart:4926 - deregister  status: 200
+2023-03-16 10:11:03,455 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Completed shut down of DiscoveryClient
+2023-03-16 10:11:03,978 INFO com.eshopping.zone.ShoppingCartAuthorizationApplication [restartedMain] Starting ShoppingCartAuthorizationApplication using Java 17.0.4.1 on inlen8520023835 with PID 9908 (C:\Users\srapani\Downloads\ShoppingCart_Authorization\ShoppingCart_Authorization\target\classes started by srapani in C:\Users\srapani\Downloads\ShoppingCart_Authorization\ShoppingCart_Authorization)
+2023-03-16 10:11:03,979 INFO com.eshopping.zone.ShoppingCartAuthorizationApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-16 10:11:04,724 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2023-03-16 10:11:04,758 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 34 ms. Found 2 MongoDB repository interfaces.
+2023-03-16 10:11:04,925 INFO org.springframework.cloud.context.scope.GenericScope [restartedMain] BeanFactory id=76e8b63c-2645-3e9e-ae39-6441db7534b2
+2023-03-16 10:11:05,115 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 4926 (http)
+2023-03-16 10:11:05,116 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]

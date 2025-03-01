@@ -1,0 +1,43 @@
+2023-03-16 09:03:55,880 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:08:55,798 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:13:55,796 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:18:55,805 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:23:55,832 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:28:55,848 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:33:55,862 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:38:55,870 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:43:55,884 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:48:55,899 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:48:56,264 ERROR com.eshopping.zone.util.JwtUtils [http-nio-4926-exec-6] JWT token is expired: JWT expired at 2023-02-11T12:53:47Z. Current time: 2023-03-16T09:48:56Z, a difference of 2840109243 milliseconds.  Allowed clock skew: 0 milliseconds.
+2023-03-16 09:48:56,588 ERROR com.eshopping.zone.util.AuthEntryPointJwt [http-nio-4926-exec-6] Unauthorized error: Full authentication is required to access this resource
+2023-03-16 09:49:04,779 ERROR com.eshopping.zone.util.JwtUtils [http-nio-4926-exec-7] JWT token is expired: JWT expired at 2023-02-03T11:12:28Z. Current time: 2023-03-16T09:49:04Z, a difference of 3537396779 milliseconds.  Allowed clock skew: 0 milliseconds.
+2023-03-16 09:49:04,781 ERROR com.eshopping.zone.util.AuthEntryPointJwt [http-nio-4926-exec-7] Unauthorized error: Full authentication is required to access this resource
+2023-03-16 09:53:55,924 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 09:58:55,934 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 10:03:55,936 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 10:08:55,954 INFO com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration
+2023-03-16 10:11:00,006 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-16 10:11:00,063 INFO org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry [Thread-1] Unregistering application SHOPPING CART with eureka with status DOWN
+2023-03-16 10:11:00,065 INFO com.netflix.discovery.DiscoveryClient [Thread-1] Saw local status change event StatusChangeEvent [timestamp=1678941660065, current=DOWN, previous=UP]
+2023-03-16 10:11:00,068 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SHOPPING CART/inlen8520023835.corp.capgemini.com:Shopping Cart:4926: registering service...
+2023-03-16 10:11:00,132 INFO com.netflix.discovery.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_SHOPPING CART/inlen8520023835.corp.capgemini.com:Shopping Cart:4926 - registration status: 204
+2023-03-16 10:11:00,177 INFO org.apache.catalina.core.StandardService [Thread-1] Stopping service [Tomcat]
+2023-03-16 10:11:00,192 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-16 10:11:00,281 WARN org.apache.catalina.loader.WebappClassLoaderBase [Thread-1] The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.4.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.4.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
+2023-03-16 10:11:00,281 WARN org.apache.catalina.loader.WebappClassLoaderBase [Thread-1] The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='640eeb09f5c47726715c1a67', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.4.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.4.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.4.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForSignalOrTimeout(DefaultServerMonitor.java:300)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.waitForNext(DefaultServerMonitor.java:281)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:179)
+ java.base@17.0.4.1/java.lang.Thread.run(Thread.java:833)
